@@ -35,4 +35,7 @@ print(score)
 
 df = pd.DataFrame(score)
 
-df.to_csv("./score.csv", index=False)
+# df.to_csv("./score.csv", index=False)
+
+df = pd.read_excel("NovTraining.xlsx", sheet_name="Sheet1")
+print(df.head())
